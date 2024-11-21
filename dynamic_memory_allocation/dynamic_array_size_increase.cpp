@@ -12,6 +12,7 @@ int main()
     {
         b[i] = a[i];
     }
+    delete[] a; // deleting array a after copying to b
     b[5] = 10;
     b[6] = 7;
     for(int i = 0; i < 7; i++)
