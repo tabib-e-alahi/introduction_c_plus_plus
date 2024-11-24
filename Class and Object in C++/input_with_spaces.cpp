@@ -12,8 +12,11 @@ public:
 int main()
 {
     Student a, b; // creating object a and b for student class
-    cin >> a.name >> a.roll >> a.gpa;
-    cin >> b.name >> b.roll >> b.gpa;
+    cin.getline(a.name, 100);
+    cin  >> a.roll >> a.gpa;
+    cin.ignore();// it will ignore the "enter" entered by the user after entering the first object input
+    cin.getline(b.name, 100);
+    cin >> b.roll >> b.gpa;
     cout << a.name << " " << a.roll << " " << a.gpa << endl;
     cout << b.name << " " << b.roll << " " << b.gpa << endl;
     return 0;
