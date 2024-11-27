@@ -2,8 +2,9 @@
 using namespace std;
 int main()
 {
-    string s = "hell";
-    s.push_back('o'); // add char to the last of s
+    string s = "hello";
+    s.pop_back(); // remove the last char of s
     cout << s << endl;
     return 0;
 }
+
